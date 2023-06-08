@@ -370,6 +370,59 @@ footer {
   color: #2196f3;
 }
 
+.newsletter-footer {
+  margin-left: 78px;
+}
+
+.newsletter-label {
+  display: flex;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding-bottom: 20px;
+}
+
+.newsletter-input {
+  position: absolute;
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: #2f303a;
+  padding-left: 16px;
+}
+
+.newsletter-button {
+  position: relative;
+  width: 200px;
+  height: 50px;
+  background-color: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  margin-left: 370px;
+}
+
+.newsletter-icon {
+  position: relative;
+  top: 5px;
+  left: 16px;
+}
+
 .webstudio-h1 {
   box-sizing: border-box;
   width: 696px;
@@ -468,6 +521,179 @@ footer {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+}
+
+.modal-form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+}
+
+.form-legend {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  align-items: center;
+  text-align: center;
+  color: #212121;
+  margin-top: 2px;
+  margin-bottom: 12px;
+}
+
+.label-form {
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  color: #757575;
+  padding-left: 40px;
+}
+
+.label-span {
+  margin-bottom: 10px;
+}
+
+.comment {
+  padding-bottom: 0;
+  margin-bottom: 20px;
+}
+
+.form-div {
+  display: flex;
+  width: 448px;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.form-input {
+  margin: 10px auto 10px 0;
+  width: 366px;
+  height: 20px;
+  border: none;
+  outline-color: transparent;
+}
+
+.comment-div {
+  display: flex;
+  position: relative;
+  width: 448px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.textarea-input {
+  resize: none;
+  margin: 12px auto;
+  width: 416px;
+  border: none;
+  outline-color: transparent;
+}
+
+.textarea-input::placeholder {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.label-form:focus-within .form-div,
+.label-form:focus-within .comment-div {
+  border-color: #2196f3;
+}
+
+.form-icon {
+  fill: #212121;
+  margin: auto;
+}
+
+.label-form:focus-within .form-icon {
+  fill: #2196f3;
+}
+
+.form-checkbox {
+  position: relative;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  top: 20px;
+  width: 16px;
+  height: 15px;
+}
+
+.square-svg {
+  position: relative;
+  left: 54px;
+}
+
+.tick-svg {
+  position: relative;
+  fill: #fff;
+  background-color: #2196f3;
+  left: 54px;
+  bottom: 19px;
+  width: 16px;
+  height: 17px;
+  border-radius: 4px;
+  visibility: hidden;
+}
+.form-checkbox:checked ~ .tick-svg {
+  visibility: visible;
+}
+.form-checkbox:checked + .square-svg {
+  visibility: hidden;
+}
+
+.form-regulations {
+  position: relative;
+  left: 79px;
+  bottom: 42px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+.regulations,
+.regulations:hover,
+.regulations:focus,
+.regulations:visited {
+  color: #2196f3;
+}
+
+.regulations-label {
+  padding-left: 55px;
+}
+
+.form-button {
+  position: relative;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background-color: #2196f3;
+  width: 200px;
+  height: 50px;
+  border: none;
+  border-radius: 4px;
+  margin-left: 164px;
+  bottom: 20px;
 }
 
 .logo-studio {
