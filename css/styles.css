@@ -384,7 +384,7 @@ footer {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .newsletter-input {
@@ -396,6 +396,10 @@ footer {
   border-radius: 4px;
   background-color: #2f303a;
   padding-left: 16px;
+}
+
+.newsletter-input:focus {
+  background-color: #fff;
 }
 
 .newsletter-button {
@@ -497,6 +501,7 @@ footer {
   left: 50%;
   position: absolute;
   transform: translate(-50%, -50%);
+  padding: 40px;
 }
 
 @keyframes windowmodel {
@@ -524,10 +529,8 @@ footer {
 }
 
 .modal-form {
-  position: relative;
   display: flex;
   flex-direction: column;
-  padding-top: 40px;
 }
 
 .form-legend {
@@ -539,7 +542,6 @@ footer {
   align-items: center;
   text-align: center;
   color: #212121;
-  margin-top: 2px;
   margin-bottom: 12px;
 }
 
@@ -553,26 +555,19 @@ footer {
   line-height: 1.2;
   letter-spacing: 0.01em;
   color: #757575;
-  padding-left: 40px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.label-span {
   margin-bottom: 10px;
 }
 
-.comment {
-  padding-bottom: 0;
-  margin-bottom: 20px;
+.label-span {
+  margin-bottom: 4px;
 }
 
 .form-div {
   display: flex;
-  width: 448px;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  margin-bottom: 10px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -596,14 +591,14 @@ footer {
 .textarea-input {
   resize: none;
   margin: 12px auto;
-  width: 416px;
+  width: 100%;
+  height: 120px;
   border: none;
   outline-color: transparent;
 }
 
 .textarea-input::placeholder {
   font-family: "Roboto";
-  font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.2;
@@ -636,17 +631,12 @@ footer {
   height: 15px;
 }
 
-.square-svg {
-  position: relative;
-  left: 54px;
-}
-
 .tick-svg {
   position: relative;
   fill: #fff;
   background-color: #2196f3;
-  left: 54px;
-  bottom: 19px;
+  left: -16px;
+  bottom: 2px;
   width: 16px;
   height: 17px;
   border-radius: 4px;
@@ -660,9 +650,6 @@ footer {
 }
 
 .form-regulations {
-  position: relative;
-  left: 79px;
-  bottom: 42px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -684,11 +671,11 @@ footer {
 }
 
 .regulations-label {
-  padding-left: 55px;
+  display: flex;
+  align-items: center;
 }
 
 .form-button {
-  position: relative;
   font-family: "Roboto";
   font-weight: 700;
   font-size: 16px;
@@ -700,8 +687,9 @@ footer {
   height: 50px;
   border: none;
   border-radius: 4px;
-  margin-left: 164px;
-  bottom: 20px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
 }
 
 .logo-studio {
